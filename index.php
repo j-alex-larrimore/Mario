@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Awesomenauts?</title>
+		<title>Mario</title>
 		<link rel="stylesheet" type="text/css" media="screen" href="index.css">
 		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,7 +11,7 @@
 		<div id="screen"></div>
 
 		<!-- melonJS Library -->
-		<script type="text/javascript" src="lib/melonJS-1.0.1.js"></script>
+		<script type="text/javascript" src="lib/melonJS-1.0.2.js"></script>
 
 		<!-- Plugin(s) -->
 		<script type="text/javascript" src="lib/plugins/debugPanel.js"></script>

@@ -1,3 +1,5 @@
+
+
 /**
  * a HUD container and child items
  */
@@ -22,29 +24,10 @@ game.HUD.Container = me.ObjectContainer.extend({
 
 		// give a name
 		this.name = "HUD";
-                
-                this.toggle = true;
 		
-                 //var range = new CanvasEntity(40, 400, 10, {});
-                
-                //this.minimap = new game.HUD.MiniMap(10, 10, me.loader.getImage("miniMap2"));
-                  
-               
-                //game.data.minimap = new game.HUD.MiniMap(10, 10, me.loader.getImage("miniMap2"));
-                //game.data.miniplayer = new miniPlayerLocation(10, 10, 5, {});
-                
-                //game.data.minimap = new game.HUD.MiniMap(10, 10, me.loader.getImage("miniMap2"));
 		// add our child score object at the top left corner
-		this.addChild(new game.HUD.ScoreItem(5, 5)); 
-                //this.addChild(game.data.minimap);
-                //this.addChild(new game.HUD.MiniMap(10, 10, me.loader.getImage("miniMap2")));
-                //this.addChild(this.minimap);
-                //this.addChild(game.data.miniplayer);
+		this.addChild(new game.HUD.ScoreItem(5, 5));
 	}
-                
-                
-                
-      
 });
 
 
@@ -56,8 +39,7 @@ game.HUD.ScoreItem = me.Renderable.extend({
 	 * constructor
 	 */
 	init: function(x, y) {
-
-                
+		
 		// call the parent constructor 
 		// (size does not matter here)
 		this.parent(new me.Vector2d(x, y), 10, 10); 
@@ -79,10 +61,7 @@ game.HUD.ScoreItem = me.Renderable.extend({
 			this.score = game.data.score;
 			return true;
 		}
-		
-          
-        
-            return false;
+		return false;
 	},
 
 	/**
@@ -90,15 +69,6 @@ game.HUD.ScoreItem = me.Renderable.extend({
 	 */
 	draw : function (context) {
 		// draw it baby !
-	},
-        
-        onPause: function(){
-            console.log("onPause");
-        }
+	}
 
 });
-
-
-  
-
-
