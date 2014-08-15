@@ -44,6 +44,15 @@ var game = {
 
                 me.pool.register("player", game.PlayerEntity, true);
                 me.pool.register("levelTrigger", game.LevelTrigger);
+                me.pool.register("star", game.Star);
+                me.pool.register("flower", game.Flower);
+                me.pool.register("mushroom", game.Mushroom);
+                me.pool.register("BadGuy", game.BadGuy);
+                me.pool.register("Box", game.Box);
+                me.pool.register("mushroomBox", game.mushroomBox);
+                me.pool.register("starBox", game.starBox);
+                me.pool.register("flowerBox", game.flowerBox);
+                me.pool.register("fireball", game.FireBall);
 
 		// Start the game.
 		me.state.change(me.state.MENU);
